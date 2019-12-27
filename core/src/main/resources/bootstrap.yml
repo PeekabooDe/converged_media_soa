@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: core-service
+  cloud:
+    zookeeper:
+      connect-string: 172.10.4.127:2181

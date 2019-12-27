@@ -1,0 +1,21 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: api
+dubbo:
+  registry:
+    address: zookeeper://172.10.4.127:2181
+  cloud:
+    subscribed-services: ${provider.application.name}
+provider:
+  application:
+    name: core-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: api-service
+  cloud:
+    zookeeper:
+      connect-string: 172.10.4.127:2181
+feign:
+  hystrix:
+    enabled: true
