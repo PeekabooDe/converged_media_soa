@@ -7,24 +7,29 @@
         <artifactId>converged_media_soa</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>redis</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>redis</name>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+    <artifactId>media_core</artifactId>
+    <name>media_core</name>
 
     <dependencies>
         <dependency>
-            <groupId>org.redisson</groupId>
-            <artifactId>redisson</artifactId>
-            <version>3.12.0</version>
+            <groupId>com.idianyou.media</groupId>
+            <artifactId>media_core_spi</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
         </dependency>
         <dependency>
             <groupId>com.idianyou.media</groupId>
-            <artifactId>redis_spi</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>media_redis_spi</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

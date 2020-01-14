@@ -10,9 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>core</module>
-        <module>api</module>
-        <module>core_spi</module>
+        <module>media_api</module>
+        <module>media_core</module>
+        <module>media_core_spi</module>
+        <module>media_redis</module>
+        <module>media_redis_spi</module>
+        <module>media_zuul</module>
     </modules>
 
     <properties>
