@@ -1,0 +1,13 @@
+spring:
+  redis:
+    host: 172.10.4.59
+    port: 6379
+    database: 0
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 300
+        min-idle: 100
+        max-active: 600
+        max-wait: 1000
+    password: IwuDuan.cn_Redis_server

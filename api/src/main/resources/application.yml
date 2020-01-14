@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: api
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
 dubbo:
   registry:
     address: zookeeper://172.10.4.127:2181
@@ -19,3 +25,25 @@ management:
   endpoint:
     health:
       show-details: always
+
+media:
+  master:
+    datasource:
+      url: jdbc:mysql://localhost:3306/master_tenant?useSSL=false
+      username: root
+      password: 123456
+      driverClassName: com.mysql.jdbc.Driver
+      maxPoolSize: 10
+      idleTimeout: 300000
+      minIdle: 10
+      poolName: master-database-connection-pool
+  logging:
+    level:
+      root: warn
+      org:
+        springframework:
+          web: debug
+        hibernate: debug
+
+
+

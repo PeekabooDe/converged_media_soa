@@ -21,6 +21,6 @@ public class CoreServiceImpl implements CoreService {
     public String sayHello(@PathVariable String name) {
 //        return String.format("dubbo.application.name:%s", serviceName + " [" + name + "]");
         String a = null;
-        return a.equals("") + "";
+        return "".equals(a) + "";
     }
 }

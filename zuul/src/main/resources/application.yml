@@ -1,0 +1,17 @@
+server:
+  port: 8761
+dubbo:
+  protocol:
+    name: dubbo
+    port: 8764
+  registry:
+    address: zookeeper://172.10.4.127:2181
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
