@@ -16,6 +16,7 @@
         <module>media_redis</module>
         <module>media_redis_spi</module>
         <module>media_zuul</module>
+        <module>media_common</module>
     </modules>
 
     <properties>

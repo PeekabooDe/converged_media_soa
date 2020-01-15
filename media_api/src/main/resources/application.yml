@@ -9,6 +9,11 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: none
+  freemarker:
+    cache: false
+    template-loader-path: classpath:/templates/
+    prefix:
+    suffix: ./html
 dubbo:
   registry:
     address: zookeeper://172.10.4.127:2181

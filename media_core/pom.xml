@@ -31,6 +31,11 @@
             <artifactId>media_redis_spi</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.idianyou.media</groupId>
+            <artifactId>media_common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
